@@ -14,4 +14,4 @@ ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_B
 RUN ls -lha /usr/local/hugo/
 RUN ln -s /usr/local/hugo/hugo /usr/local/bin/hugo
 
-EXPOSE 1313
+ENTRYPOINT hugo
